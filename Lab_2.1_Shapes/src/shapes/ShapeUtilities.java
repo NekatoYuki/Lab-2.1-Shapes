@@ -38,7 +38,7 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		double sumArea = 
+		double sumArea = rectangleArea + squareArea + circleArea;
 		return sumArea;
 	}
 
