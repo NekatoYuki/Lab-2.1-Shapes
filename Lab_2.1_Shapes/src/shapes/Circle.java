@@ -16,8 +16,9 @@ public class Circle implements Shape {
 	 * @param radius
 	 * @return 
 	 */
-	public Circle(int radius) {
+	public Circle(int radius, double pi) {
 		this.radius = radius;
+		this.pi = pi;
 	}
 
 	@Override
