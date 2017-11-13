@@ -33,7 +33,7 @@ public class Runner {
 
 		System.out.println("\n\n Now testing the random array.\n");
 
-		shapeArr = new Shape[10];
+		shapeArr = new Shape[5];
 
 		// Why are we using a for loop instead of a for-each loop here?
 		for (int i = 0; i < shapeArr.length; i++) {

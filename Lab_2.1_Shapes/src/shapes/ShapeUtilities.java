@@ -37,8 +37,12 @@ public class ShapeUtilities {
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumArea(Shape[] shapes) {
-		double sumArea = rectangleArea + squareArea + circleArea;
+	public static double sumArea(Shape[] area) {
+		double sumArea = 0;
+		for(int a = 0; a < area.length; a++)
+		{
+			sumArea = sumArea + area[a].calculateArea();
+		}
 		return sumArea;
 	}
 
@@ -48,8 +52,13 @@ public class ShapeUtilities {
 	 * @param shapes
 	 * @return double
 	 */
-	public static double sumPerimeter(Shape[] shapes) {
-		double sumPerimeter = rectanglePerimeter + squarePerimeter + circlePerimeter;
+	public static double sumPerimeter(Shape[] Perimeter) 
+	{
+		double sumPerimeter = 0;
+		for(int a = 0; a < Perimeter.length; a++)
+		{
+			sumPerimeter = sumPerimeter + Perimeter[a].calculatePerimeter();
+		}
 		return sumPerimeter;
 	}
 
