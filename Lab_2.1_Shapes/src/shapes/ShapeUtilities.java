@@ -49,8 +49,8 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
-		// To be written by student
-		return 0.0;
+		double sumPerimeter = rectanglePerimeter + squarePerimeter + circlePerimeter;
+		return sumPerimeter;
 	}
 
 }
