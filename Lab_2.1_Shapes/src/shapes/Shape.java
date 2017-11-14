@@ -18,13 +18,13 @@ public interface Shape {
 	@Override
 	public abstract double calculateArea()
 	{
-		int triangleArea = (0.5 * length * height);
+		double triangleArea = (0.5 * length * height);
 		return triangleArea;
 	}
 
 	public abstract double calculatePerimeter()
 	{
-		int trianglePerimeter = (3 * length);
+		double trianglePerimeter = (3 * length);
 		return trianglePerimeter;
 	}
 
