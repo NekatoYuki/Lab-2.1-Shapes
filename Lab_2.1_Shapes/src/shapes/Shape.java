@@ -4,34 +4,12 @@ package shapes;
  * @author Mr Levin Created 10/16/2017 Lab 2.1 shapes
  *
  */
-public interface Shape {
-	
-	private int length;
-	private int height;
-	
-	public Triangle(int length)
-	{
-		this.length = length;
-		this.height = height;
-	}
-	
-	@Override
-	public abstract double calculateArea()
-	{
-		double triangleArea = (0.5 * length * height);
-		return triangleArea;
-	}
+public interface Shape2 {
 
-	public abstract double calculatePerimeter()
-	{
-		double trianglePerimeter = (3 * length);
-		return trianglePerimeter;
-	}
+	public abstract double calculateArea();
 
-	@Override
-	public abstract String toString()
-	{
-		return "Triangle Side Length: " + side + " Triangle Height: " + height + " Area: " + this.calculateArea() +
-				" Perimeter: " + this.calculatePerimeter();
-	}
+	public abstract double calculatePerimeter();
+
+	public abstract String toString();
+
 }
