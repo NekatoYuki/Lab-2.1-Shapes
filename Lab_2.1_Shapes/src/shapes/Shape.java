@@ -5,11 +5,32 @@ package shapes;
  *
  */
 public interface Shape {
+	
+	private double length;
+	private double height;
+	
+	public Triangle(int length)
+	{
+		this.length = length;
+	}
+	
+	@Override
+	public abstract double calculateArea()
+	{
+		double triangleArea = (0.5 * length * height);
+		return triangleArea;
+	}
 
-	public abstract double calculateArea();
+	public abstract double calculatePerimeter()
+	{
+		double trianglePerimeter = (3 * length);
+		return trianglePerimeter;
+	}
 
-	public abstract double calculatePerimeter();
-
-	public abstract String toString();
-
+	@Override
+	public abstract String toString()
+	{
+		return "Triangle Side Length: " + side + " Area: " + this.calculateArea() +
+				" Perimeter: " + this.calculatePerimeter();
+	}
 }
