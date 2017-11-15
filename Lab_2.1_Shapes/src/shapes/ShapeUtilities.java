@@ -31,6 +31,7 @@ public class ShapeUtilities {
 			return new Rhombus(rand.nextInt(50), rand.nextInt(50), rand.nextInt(50));
 		default:
 			return new Circle(rand.nextInt(100));
+			// each case is for a different shape using rand.nextInt(x) to input a random value within 1 to x
 		}
 
 	}
@@ -48,6 +49,7 @@ public class ShapeUtilities {
 			sumArea = sumArea + area[a].calculateArea();
 		}
 		return sumArea;
+		//finds the area of all the array and adds them together to return the sum of all the areas
 	}
 
 	/**
@@ -64,6 +66,7 @@ public class ShapeUtilities {
 			sumPerimeter = sumPerimeter + Perimeter[a].calculatePerimeter();
 		}
 		return sumPerimeter;
+		//finds the perimeter of all the array and adds them together to return the sum of all the perimeter
 	}
 
 }
