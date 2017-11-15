@@ -16,12 +16,14 @@ public class Triangle implements Shape
 	{
 		double triangleArea = (0.5 * length * height);
 		return triangleArea;
+		// equation to calculate area of triange
 	}
 
 	public double calculatePerimeter()
 	{
 		double trianglePerimeter = (3 * this.length);
 		return trianglePerimeter;
+		// regular triangle has 3 same sides
 	}
 
 	@Override
@@ -29,5 +31,6 @@ public class Triangle implements Shape
 	{
 		return "Triangle Side Length: " + length + " Triangle Height: " + height + " Area: " + this.calculateArea() +
 				" Perimeter: " + this.calculatePerimeter();
+		//returns area and perimeter found
 	}
 }

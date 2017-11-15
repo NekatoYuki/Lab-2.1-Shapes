@@ -24,17 +24,20 @@ public class Circle implements Shape {
 	public double calculateArea() {
 		double circleArea = (pi * radius * radius);
 		return circleArea;
+		// area of circle = pi times radius times radius
 	}
 
 	@Override
 	public double calculatePerimeter() {
 		double circlePerimeter = (pi * 2 * radius);
 		return circlePerimeter;
+		// perimeter of circle = 2 times pi times radius
 	}
 
 	@Override
 	public String toString() {
 		return "Circle Radius: " + radius + " Area: " + this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
+		//returns area and perimeter found
 	}
 }
